@@ -1,0 +1,114 @@
+
+* {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(59, 70, 100);
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+  background-color: rgb(59, 70, 100);
+  padding: 10px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.theme-container {
+  grid-area: header;
+}
+
+.screen-container {
+  grid-area: main;
+  background-color: rgb(24, 31, 50);
+  height: 100px;
+  border-radius: 8px;
+}
+
+.key-container {
+  grid-area: footer;
+    padding: 20px;
+  border-radius: 8px;
+  color: rgb(61, 71, 83);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  background-color: rgb(37, 45, 68);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.theme-container,
+.screen-container,
+.key-container {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 3.5rem;
+  border-radius: 8px;
+}
+
+.key-items {
+  border-radius: 8px;
+  background-color: rgb(234, 227, 219);
+  box-shadow: 0px 5px 0 3px rgb(175, 164, 162);
+  padding: 20px;
+  font-size: 3.5rem;
+  text-align: center;
+  height: 20px;
+  width: 60px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 25px;
+  background-color: rgb(37, 45, 68);
+  padding: 20px;
+}
+
+.control-items {
+  border-radius: 8px;
+
+  background-color: rgb(234, 227, 219);
+  padding: 20px;
+  font-size: 3.5rem;
+  text-align: center;
+  height: 15px;
+}
+
+.del,
+.reset,
+.equal {
+  background-color: rgb(100, 114, 153);
+  box-shadow: 0px 5px 0 3px rgb(65, 78, 110);
+  color: rgb(244, 249, 255);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.equal {
+  background-color: rgb(209, 63, 48);
+  box-shadow: 0px 5px 0 3px rgb(150, 39, 28);
+  font-size: 2.5rem;
+}
